@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>About</title>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="/vids/sunset.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>J</span>ustine <span>Q</span>uilantang
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Services.html">Service</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="Contact.html">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <div class="about-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <img src="/pics/me.jpg" alt="Your Picture" class="profile-picture">
+        <div class="text-container">
+            <h1 class="animated-text">ABOUT ME</h1>
+            <h2 class="animated-text">Front End Developer</h2>
+            <p>
+                As a front-end developer, I am deeply committed to crafting seamless and visually compelling user interfaces.
+                With expertise in HTML, CSS, and JavaScript, I transform concepts into interactive and responsive designs 
+                that prioritize usability and accessibility. My approach involves attention to detail, ensuring every component 
+                aligns with modern web standards and delivers an intuitive user experience. I thrive in collaborative 
+                environments, working closely with designers and back-end developers to create cohesive and functional web applications.
+                Continuously learning and adapting to the latest trends and technologies, I aim to bridge the gap between design 
+                and functionality, making every project both innovative and user-centric.
+            </p>
+            <a href="Skills.html" class="action-button">Learn More</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <i class="fa-brands fa-x"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Justine Quilantang. All rights reserved.</p>
+        </div>
+    </footer>
+    
+   
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

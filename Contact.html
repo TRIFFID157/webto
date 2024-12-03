@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Justine Quilantang</title>
+    <style>
+
+        .contact-us-section {
+    padding: 25px 100px;
+    text-align: center;
+  }
+  .container-contact {
+    display: flex;
+    column-gap: 50px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .heo {
+    background-color: #0000008c;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+  label {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    color: white;
+  }
+  input, textarea, button {
+    display: block;
+    margin: 15px 0;
+    font-size: 30px;
+  }
+  input {
+    height: 35px;
+    width: 40vw;
+  }
+  textarea {
+    height: 200px;
+    width: 40vw;
+  }
+  button[type="submit"] {
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 15px 30px;
+    width: 40vw;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 black;
+  }
+
+  button[type="submit"]:hover {
+    color: rgb(0, 0, 0);
+    box-shadow: inset 0 -100px 0 0 rgb(255, 255, 255);
+  }
+
+  .map-section h1 {
+    font-family: var(--second-font);
+    font-size: 25px;
+  }
+
+  .map-section a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .contact {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-right: 40px;
+  }
+
+  .social-media {
+    margin-top: 20px;
+    text-align: center; /* Center the social media links */
+  }
+
+  .contactlink1 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 50px;
+    color: #333;
+  }
+
+  .contactlink1:hover {
+    color: #007bff;
+  }
+
+  /* Add Pinterest icon */
+  .fab.fa-pinterest {
+    color: #bd081c; /* Pinterest red */
+  }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="/vids/ocean.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                <span>J</span>ustine <span>Q</span>uilantang
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="Projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="Services.html">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Contact</a></div>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Projects</a>
+                <a href="">Service</a>
+                <a href="">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Projects.html">Projects</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    </nav>
+    </header>
+     <section class="contact-us-section">
+        <div class="heo">
+        <div class="container-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="message-form">
+            <form method="" action="POST">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+      </section>
+
+      <!--adresses-->
+        <div class="contact" id="contact">
+          <div class="container">
+            <h2>Feel Free to Contact</h2>
+            <p>Feel free to reach out for any inquiries or questions.</p>
+            <div class="contact-info">
+              <div class="info">
+                <h3>Address</h3>
+                <p>123 Niyugan, Jaen, </p>
+              </div>
+              <div class="info">
+                <h3>Phone</h3>
+                <p>+63 9452271201</p>
+              </div>
+              <div class="info">
+                <h3>Email</h3>
+                <p>justinequilantang@gmail.com</p>
+              </div>
+            </div>
+            <div class="social-media">
+              <h3>Visit Us</h3>
+              <a href = "https://www.facebook.com/profile.php?id=61559305944691&mibextid=ZbWKwL"><i class = "fab fa-facebook-f"></i></a>
+              <a href = "https://twitter.com/PblogOfficial"><i class = "fab fa-twitter"></i></a>
+              <a href = "https://www.instagram.com/pblogsite?igsh=eGN4cGhibWZ2NnBk"><i class = "fab fa-instagram"></i></a>
+              <a href = "https://www.pinterest.com/officialpblog"><i class = "fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+        </div>
+   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0,});
+    </script>
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <i class="fa-brands fa-x"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Justine Quilantang. All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html> allign the adresses to the right while the form to the left, have a javascript internal for form 
+
+
+
+
